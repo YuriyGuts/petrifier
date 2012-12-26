@@ -1,0 +1,867 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="4e97afaa-5ae6-4eb3-b12d-6a8746c2ca53" name="Packages" linkedPackageId="5453b109-720b-4acd-b73d-ed720b300a70" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="3fa6721e-e053-4cd7-b307-90685c44a068" name="YuriyGuts.Petrifier.Core">
+        <elementDefinition Id="17983339-6321-4869-ab44-4812dfc05b5d" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="02137bdc-bab8-4c11-8480-3783452ed1d5" name="PetriNet" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="56461d2e-318c-45bd-bd9a-2894b9d07e38" />
+              <targetEnds>
+                <association Id="4a2c9a7b-f9d2-4afe-8b99-2652b8a74a51" isDerived="false" sourceEndRoleName="" targetEndRoleName="Elements" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="c856f133-d47f-4a1e-9ee4-773a5b737aa2" LastKnownName="PetriNetElement" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e4b619e6-ede0-4c13-b833-f9f100d7c3ec" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="9abbd802-b6a3-46c3-9d48-a9b25e22a161" name="Lower" value="1">
+                            <elementDefinition Id="d32bc6e4-725e-43a9-8b29-4c5d8e831f38" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="56b7a46b-c7f4-41ef-aac2-420ab86319e2" name="Upper" value="1">
+                            <elementDefinition Id="14a05bf4-d3a7-4d7e-8865-01bc952d494b" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="f641937d-4b34-427f-a20a-d19433164ff7" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="b58c0bd9-1b5f-43f9-89dc-40435aaed912" name="Elements" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="7f9c092e-f24b-49a1-9480-25df6ca564ee" name="Lower" value="*">
+                            <elementDefinition Id="d1cd21f0-f099-4dde-811f-685485f28bd0" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="a727c3a2-07fc-4057-9ccc-eac60998b34d" name="Upper" value="*">
+                            <elementDefinition Id="ec185731-870d-4534-b6e2-a6cedcfe6650" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="df4dd83e-04dc-49da-9c68-ef9552af4e37" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="2f75db6a-10ab-4fb7-b421-0a2bd93299e0" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="b9357eab-36d1-43c6-a6dc-5c8381c3df10" name="Elements" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="92f31171-bb7f-4bb1-9e27-9ea81249a575" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="c856f133-d47f-4a1e-9ee4-773a5b737aa2" name="PetriNetElement" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="33f354a1-b9d4-4b57-a876-d4854fc5ea60" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0ee03306-916a-47ed-af2f-efb27d178bce" name="PetriNetLabeledElement" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0eba700d-1ee0-4adf-80ff-2699956eee4b" />
+              <generalsInternal>
+                <generalization Id="940f7c5c-98be-4d15-a2e3-3735135b7330" isSubstitutable="false">
+                  <classMoniker Id="c856f133-d47f-4a1e-9ee4-773a5b737aa2" LastKnownName="PetriNetElement" />
+                  <elementDefinition Id="af2feceb-1dbb-45ac-9bc6-3703dd86bfb5" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="21e98657-b9b4-4af5-b10b-1c8bd56015a5" name="PetriNetModule" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="82330025-a0fc-4632-9ff9-2d21abff2d60" />
+              <targetEnds>
+                <association Id="cca7bbfc-d178-42ba-bcbf-0f379bd442f8" isDerived="false" sourceEndRoleName="" targetEndRoleName="PetriNet" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="02137bdc-bab8-4c11-8480-3783452ed1d5" LastKnownName="PetriNet" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="96e3c850-465d-4312-9164-64c07457ea5c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="ad99ff91-26e6-4327-8d29-56db3ba0c80b" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="8005a7b2-3635-4b1c-b1e3-45d8b0a58431" name="PetriNet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="e60290ef-e2e0-431b-a63d-4dcfced32518" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="d7cc82ba-1a39-4d5f-9f47-71427ff46b98" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="71405b89-3d91-4d70-9bc2-a18beed7005b" name="PetriNet" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5953d89d-cbe7-4eca-b81b-b31297adf897" />
+                </property>
+                <property Id="e96758bc-3bc1-462a-a797-bf3cc5f2ee50" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fa3c2569-ec5f-42bc-bac5-2f71da86716c" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="75c66e82-b5b8-4e3d-b0f3-ebe29003af1c" name="AndJoin" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ce734313-6259-4e96-9b81-7ae567f9a3d5" />
+              <generalsInternal>
+                <generalization Id="78eb11f2-a969-4174-9f9a-8cbc75cd00a1" isSubstitutable="false">
+                  <classMoniker Id="0ee03306-916a-47ed-af2f-efb27d178bce" LastKnownName="PetriNetLabeledElement" />
+                  <elementDefinition Id="2cee2903-4f49-4b47-a2ed-ffc48ebd4c09" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ea685f02-be5d-45e1-95c1-17ca5376e244" name="AndSplit" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="60f7a66b-3e85-42de-8ed1-3b567dfbeec2" />
+              <generalsInternal>
+                <generalization Id="630b3242-0689-4ed3-80e6-f0168e9d83ec" isSubstitutable="false">
+                  <classMoniker Id="0ee03306-916a-47ed-af2f-efb27d178bce" LastKnownName="PetriNetLabeledElement" />
+                  <elementDefinition Id="ec8ed194-2ef0-4141-99ad-b1963f25811a" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="00b872a4-58de-4d9b-8463-2a647b84344b" name="OrSplit" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f908f94a-4a30-485c-a572-97f35caf7397" />
+              <generalsInternal>
+                <generalization Id="a206add4-9070-43c6-835d-fdb587599a06" isSubstitutable="false">
+                  <classMoniker Id="0ee03306-916a-47ed-af2f-efb27d178bce" LastKnownName="PetriNetLabeledElement" />
+                  <elementDefinition Id="5e33905c-028c-4488-85dd-e481e76df8ac" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="82c96187-c27d-49ab-ad60-83cbacc9fc26" name="Subprocess" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2b1621fe-9ad6-49f5-a567-bdaba88c1c9a" />
+              <generalsInternal>
+                <generalization Id="d3949dd7-73d5-474e-b142-4316b16dabf8" isSubstitutable="false">
+                  <classMoniker Id="0ee03306-916a-47ed-af2f-efb27d178bce" LastKnownName="PetriNetLabeledElement" />
+                  <elementDefinition Id="ddb2289d-a60f-4c20-a4f3-673cf335efe5" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="83d35941-2986-4eff-9f45-4bb77ba65b35" name="Place" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4daa9816-1be7-4162-9cc6-cbd9564eea4a" />
+              <generalsInternal>
+                <generalization Id="c4d338cd-e91f-4e4f-b4f1-4f45329326d1" isSubstitutable="false">
+                  <classMoniker Id="0ee03306-916a-47ed-af2f-efb27d178bce" LastKnownName="PetriNetLabeledElement" />
+                  <elementDefinition Id="07ca7a2e-9817-4eaa-99f0-bf0784981361" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="834128a1-4522-4e5b-8cd0-00021a1e5766" name="Transition" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="fd647338-8183-4865-89b6-3715f25d3cb0" />
+              <generalsInternal>
+                <generalization Id="d52aeaf8-da80-4897-b701-4609e8ef372d" isSubstitutable="false">
+                  <classMoniker Id="0ee03306-916a-47ed-af2f-efb27d178bce" LastKnownName="PetriNetLabeledElement" />
+                  <elementDefinition Id="6ebfada5-8077-4aaa-a2d8-114bcf81ffc3" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="12492388-26fa-4775-9289-f94ebf2a897e" name="Arc" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="fbd0708b-844f-4583-9132-66cca8e0f69d" />
+              <generalsInternal>
+                <generalization Id="e103f363-1f77-4cbb-8dbb-367e03eacb85" isSubstitutable="false">
+                  <classMoniker Id="c856f133-d47f-4a1e-9ee4-773a5b737aa2" LastKnownName="PetriNetElement" />
+                  <elementDefinition Id="2b50dd5e-9c7f-4cb2-a006-8bb6a8ef5611" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b5612cc6-578d-40ef-ab47-79fee83492bf" name="OrJoin" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e57aaf1e-798e-43e4-b8bf-304951833a06" />
+              <generalsInternal>
+                <generalization Id="05a5c90a-0f6c-4922-9b2b-63f1e568d87c" isSubstitutable="false">
+                  <classMoniker Id="0ee03306-916a-47ed-af2f-efb27d178bce" LastKnownName="PetriNetLabeledElement" />
+                  <elementDefinition Id="303b55d9-69a2-4734-8529-6d3c6a3b06fa" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="b832a514-a657-40f2-ade3-9a2d27cfa30f" name="YuriyGuts.Petrifier.Runtime">
+        <elementDefinition Id="8a6cba3d-275b-4296-923b-1993f0e4840e" />
+        <importedPackagesInternal>
+          <packageImport Id="8980831f-7842-4f17-adf1-1a17e0aa78f4" visibility="Public">
+            <packageMoniker Id="3fa6721e-e053-4cd7-b307-90685c44a068" LastKnownName="YuriyGuts.Petrifier.Core" />
+            <elementDefinition Id="f6e0eff7-19f8-4729-95b4-969b73acf293" />
+          </packageImport>
+        </importedPackagesInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="021ba151-7bd1-41a7-85a9-eeaf583bb7ec" name="PetriNetRuntime" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="702d7e35-5ef6-4a21-a182-0030c6f961a0" />
+              <targetEnds>
+                <association Id="1020f8b0-defc-40d1-917c-4830a4b34d5b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="b6b0ae01-e3a1-4cb6-b9aa-8d09208b44f1" LastKnownName="RuntimeModuleHandle" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="dc1f3439-2813-4088-93ea-b29b861eb87a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="625a67ad-b10f-4655-8546-bd096ca4c54f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d163414e-2034-4ae9-865e-c926cf440aad" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="f6f12a3f-c6fe-476c-b444-0375ffd82aff" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="df3a09f0-8061-464c-af63-2a5dae68dac1" />
+                </association>
+                <association Id="03e0b8aa-b096-40ce-b49c-94d155603e45" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="d3506812-7970-41e0-b808-70e3f6079e14" LastKnownName="RuntimeModuleSnapshot" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="967186bf-a15e-4294-b364-bb2b3bbf63ef" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="1039a450-76c7-4647-afec-46f094d12a3c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="43eca76c-ac98-4c1a-8527-5c5357903b20" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="1ef88726-bd94-495e-a47d-038edc4f2eb6" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="b5bf69bf-f75f-4352-846d-4e763d980a1b" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="86ff67df-6ec9-45e8-b2c0-4a3d4304a13e" name="Execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="45e1f519-23df-4b7d-8bae-57650ba7922c" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d1639b6e-87fe-47af-bc23-60e431644055" name="RuntimeExecutionContext" direction="In" isUnique="false">
+                        <elementDefinition Id="3e7be94e-ae20-4458-9b20-954517d19fb9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="472153c4-4548-45d4-8cfe-3d094b5462b2" name="TakeSnapshot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="68a732b0-28ba-472c-ba99-1c26e03d834a" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b42d72fb-27e7-4b59-b5be-6ef54c3d2a3a" name="RuntimeModuleHandle" direction="In" isUnique="false">
+                        <elementDefinition Id="a397eca6-ae7f-44d4-ba95-29af0871d89d" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="06f572ae-083a-4d62-8f2a-f7fcede84ce6" name="Suspend" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7f057a27-a58d-4026-82e0-22e537160174" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="3f43a997-df53-4a6d-9b2f-0a14c79499d6" name="RuntimeModuleHandle" direction="In" isUnique="false">
+                        <elementDefinition Id="5635f2ce-1489-4264-af18-af3f78dcda09" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="7114956c-82cf-4ee3-8b7e-0e52538e30f4" name="Resume" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7ed3d884-2ca8-48d8-af11-ff76c6bc3255" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="77e74d4e-b64d-4de4-908f-b9d0dae407dc" name="RuntimeModuleHandle" direction="In" isUnique="false">
+                        <elementDefinition Id="62ee8501-6b55-4b53-886b-92eae0551b5c" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="5d24071c-5b37-4597-bcd3-5493781381ad" name="RuntimeExecutionContext" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f34142fd-a8fb-4f78-9786-554096326c9e" />
+              <targetEnds>
+                <association Id="33e0b006-80e7-40a9-be60-833a19d52594" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="21e98657-b9b4-4af5-b10b-1c8bd56015a5" LastKnownName="PetriNetModule" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="7583052f-ee89-43d9-b2f4-81bd9f56a437" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="02b96895-aa45-4b54-ba88-f7bb70080f3f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="c16a09e9-4313-4749-b260-0ffe7225fd85" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="4ddb0070-9aa7-41e7-8f30-5aca2e22665b" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="a40f1785-64e8-4b29-8d4b-b37bd4641f31" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="97ba5d88-642d-4a70-8520-9f7bccee6cf2" name="PetriNetModule" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="94ac4d8c-6d56-4c3d-b7a1-9061ccd7dd26" />
+                </property>
+                <property Id="e0452efb-36e1-4ed6-9e1c-33b05f34dd58" name="Callback" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="68ab579f-6d02-473a-a4cb-e6c44e11a446" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b6b0ae01-e3a1-4cb6-b9aa-8d09208b44f1" name="RuntimeModuleHandle" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a96b3133-9d95-4ddb-aef4-c7127e316f1f" />
+              <targetEnds>
+                <association Id="be6c3413-94c2-4aa5-ad8c-98bfea09415c" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="5d24071c-5b37-4597-bcd3-5493781381ad" LastKnownName="RuntimeExecutionContext" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="6c6972f1-7ec9-45d7-8d4e-2bb8b1b0f61e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="18d150d1-439d-4f99-a6d8-bec2f6702e61" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="0eae355f-708b-4a77-80f1-04d5545c1207" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="96bed433-df12-42b5-aa22-8a9141d9be72" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="4ed3ee0f-99ad-428f-b02a-5e66976bc9fa" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="fd66e2f3-3d76-4f5a-ad96-9ebc4eea08f4" name="ExecutionContext" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="938542b6-f2ea-4237-8641-1933f2afd23e" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d3506812-7970-41e0-b808-70e3f6079e14" name="RuntimeModuleSnapshot" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f81f0af0-e62c-4f88-bb88-f68bf113f489" />
+              <ownedAttributesInternal>
+                <property Id="b3fa9f49-fbef-4ba2-a59d-be6bd8cfa31e" name="CurrentElement" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ca64ea5-e2d0-4a38-8329-3393232117b8" />
+                </property>
+                <property Id="19709015-03bd-4754-ba9c-3f5153aae0b5" name="ExecutionTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="352798d1-a0a4-4d8b-ad97-1f4a3c3b16ed" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="80739634-8e64-477a-aafd-551f574d8235" name="YuriyGuts.Petrifier.Visualization">
+        <elementDefinition Id="f1d86335-5949-4d1d-a02f-bd5e563c453a" />
+        <importedPackagesInternal>
+          <packageImport Id="f1475da9-b845-4a27-917b-d1a4056fdb4a" visibility="Public">
+            <packageMoniker Id="3fa6721e-e053-4cd7-b307-90685c44a068" LastKnownName="YuriyGuts.Petrifier.Core" />
+            <elementDefinition Id="d4b317ed-792d-486a-9f4d-ef2758298cea" />
+          </packageImport>
+        </importedPackagesInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="dee9b434-6cd5-487c-89f6-3490a267ed15" name="GeometryHelper" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="dd33aa14-3ca5-4016-b0d9-3af633566a41" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="aa653248-e1bd-4a9b-bde7-a1c96122f8f5" name="PetriNetEditor" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4d3a8bb7-fe0a-4418-a130-8441d57e5850" />
+              <suppliersInternal>
+                <interfaceRealization Id="73c2f51c-000e-40ab-9c48-a86b8c86e71f">
+                  <interfaceMoniker Id="d4d37855-248a-45ac-9831-6db298c0c787" LastKnownName="IWidgetLocator" />
+                  <elementDefinition Id="178108fa-16f5-40f7-a67f-dc945f80795c" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <targetEnds>
+                <association Id="04d4ff2e-f6d2-498d-bbb4-a78f5fe097d1" isDerived="false" sourceEndRoleName="" targetEndRoleName="Widgets" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="e066c95f-a8ab-4767-a069-15c1d527b0a4" LastKnownName="PetriNetElementWidget" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d16043e9-7f20-4fcd-a575-e40f5c7be1dc" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="8751e87f-7b04-4c28-9872-223dddea747e" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="f3559a98-6290-4d53-ac5c-151f4e81f5f3" name="Widgets" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="0f877f41-3ee7-4845-a6ec-51cc3b9a92f7" name="Lower" value="*">
+                            <elementDefinition Id="3022df95-1b6d-454d-8fd1-c450ac6953b4" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="3474d6a1-7b66-47c8-a237-eab995c83bd5" name="Upper" value="*">
+                            <elementDefinition Id="9149fddc-5a5a-4197-abc8-e04e1c84cd60" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="7cc4b914-dbdf-4077-a620-293fbf8986d0" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="627b28f6-3ad6-47cf-a79f-2ac9e67edc88" />
+                </association>
+                <association Id="23fb5767-f4c2-4f01-9e08-31165a261e6f" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="dee9b434-6cd5-487c-89f6-3490a267ed15" LastKnownName="GeometryHelper" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="703565fe-a93a-4528-bfa3-c58f7b6bcc98" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="613f7af7-2808-4a76-81b0-1cf8a4b18a45" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="3eede585-3fae-4e77-affb-68cc38e527b1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="193c1279-8878-4452-9477-0361623dafd6" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="640f4f27-e1e4-41e2-9a65-d6b3f723d219" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e066c95f-a8ab-4767-a069-15c1d527b0a4" name="PetriNetElementWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="c33baf0a-bd6b-4d18-ba32-416cc1a7907d" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="d4d37855-248a-45ac-9831-6db298c0c787" name="IWidgetLocator" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="b8f1b564-6e9a-458f-a6cc-00c1ee3fcac8" />
+            </Interface>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="b7ccb545-c278-4373-8bc9-f568f22de5b5" name="YuriyGuts.Petrifier.Diagnostics">
+        <elementDefinition Id="58026c9e-1d7c-4c2f-aac4-d2d6465b1a99" />
+        <importedPackagesInternal>
+          <packageImport Id="9cd4e8b0-b42a-4964-8595-bdb0299672a6" visibility="Public">
+            <packageMoniker Id="3fa6721e-e053-4cd7-b307-90685c44a068" LastKnownName="YuriyGuts.Petrifier.Core" />
+            <elementDefinition Id="bac91e0b-6af7-4407-acad-f685f43ca97a" />
+          </packageImport>
+        </importedPackagesInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="74848031-7d80-4ea9-834f-05447b2da133" name="PetriNetVerifier" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="eb3fd36c-2261-445f-b7ab-810bc8bd67a4" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f730737a-0e1e-424a-a99f-b0668f71a7a6" name="PetriNetSoundnessVerifier" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="184218d1-974a-4d70-be5f-744957b67d6d" />
+              <generalsInternal>
+                <generalization Id="ae6a1877-9784-415b-9e39-4f7de6c06aaf" isSubstitutable="false">
+                  <classMoniker Id="74848031-7d80-4ea9-834f-05447b2da133" LastKnownName="PetriNetVerifier" />
+                  <elementDefinition Id="90121579-3e7b-415e-904d-26b7e58cec5c" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e7b82e69-5d4a-4b4b-a033-b9840c8608bd" name="PetriNetReachabilityVerifier" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a91da39e-c86b-4d51-ba9e-8072c6b6a87a" />
+              <generalsInternal>
+                <generalization Id="d54e0259-4730-4b03-9091-1267092c43a3" isSubstitutable="false">
+                  <classMoniker Id="74848031-7d80-4ea9-834f-05447b2da133" LastKnownName="PetriNetVerifier" />
+                  <elementDefinition Id="ad3cc2a0-44e1-4a60-b864-56475470dfce" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ceae58ea-cbb3-4e08-9b80-65b76772984f" name="PetriNetQuantitativeVerifier" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6d6591d1-fd14-4ca6-bfd1-ffdf29ca4f6f" />
+              <generalsInternal>
+                <generalization Id="ed7f6724-10e3-4f2a-8e2c-1adf9a64459b" isSubstitutable="false">
+                  <classMoniker Id="74848031-7d80-4ea9-834f-05447b2da133" LastKnownName="PetriNetVerifier" />
+                  <elementDefinition Id="104dbf28-6d2d-4abc-935d-050e6251e322" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="228d0534-cf40-4fc8-98b7-3eaaa9728e1c" name="PetriNetVerificationContext" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a8d2958d-473e-4dc2-ba7f-e0c24fe6fe88" />
+              <targetEnds>
+                <association Id="110fee87-c22c-42a9-ae1b-d83648db84ae" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="74848031-7d80-4ea9-834f-05447b2da133" LastKnownName="PetriNetVerifier" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="177c1076-efd9-4408-a411-18a8656958f4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="ed9b140f-3e70-423f-b161-cbbf86eb284a" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d2e9939f-c986-4a19-b0ff-7fd234ef4d11" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="515d4f7c-5436-4060-a77c-86397468c769" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="dead8668-3be9-473d-af83-f377da07e681" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6cc3bbf6-dbc1-4575-bf96-33a993a9d10c" name="PetriNetVerificationResult" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="79987df6-5a4b-4d58-a35a-63933a5d8a4d" />
+              <targetEnds>
+                <association Id="0555ee29-94c6-42d2-a40a-7eb931f01fbc" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="74848031-7d80-4ea9-834f-05447b2da133" LastKnownName="PetriNetVerifier" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="18920cfd-4cc7-4385-abf2-7a2ca75fddaf" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="5d7861b0-74bc-42d3-904b-a83ac6d62265" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="15974a8a-f165-4ff5-ac8e-c9c7a4065497" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="3aec3d44-2800-43b8-83e7-dc644b04f2ce" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="d59f8b2c-3c31-422d-815f-53332e0b7645" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="493e3633-0103-4d17-9e7b-9a73aeb1c3f9" name="YuriyGuts.Petrifier.Persistence">
+        <elementDefinition Id="7dc3a1ac-a9c4-4449-a4cc-0d2d90236b8d" />
+        <importedPackagesInternal>
+          <packageImport Id="7ab3fa74-e662-44b7-a7e1-80eb90fea9d7" visibility="Public">
+            <packageMoniker Id="3fa6721e-e053-4cd7-b307-90685c44a068" LastKnownName="YuriyGuts.Petrifier.Core" />
+            <elementDefinition Id="ec1f3690-5862-406c-b81f-460cdfd6f8fb" />
+          </packageImport>
+        </importedPackagesInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="ccc925f0-f13f-47e6-b491-7e598446eeee" name="PetriNetPersister" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="63ef7b85-c57b-4b7c-8bfc-4efd156a0a36" />
+              <targetEnds>
+                <association Id="12260203-687c-4ba6-93c9-75660160fa32" isDerived="false" sourceEndRoleName="" targetEndRoleName="Document" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="f73ba85c-b9a5-4b56-b0a3-55eb51634a53" LastKnownName="PersistentDocument" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="795ee800-7dbe-487c-b4e0-3b5cbbea95d1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="0a081eb5-ed44-44ae-a24a-9ad75e846be6" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="7502e709-d4ec-463f-ae30-dad0f993838f" name="Document" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="a1e37b7d-4a6b-4347-8b5f-864edcb7b7df" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="313f8a48-16b5-4dd9-afd6-e246f1fcf509" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="307701db-a72c-4560-b84b-2b509697b972" name="PnmlPersister" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8d142a02-255e-4aa1-aba0-f3cf9832f9ff" />
+              <generalsInternal>
+                <generalization Id="256f4f21-695a-4803-8357-c072c8a02aec" isSubstitutable="false">
+                  <classMoniker Id="ccc925f0-f13f-47e6-b491-7e598446eeee" LastKnownName="PetriNetPersister" />
+                  <elementDefinition Id="eb1966cd-bb24-4b42-b8ac-386af41f17f6" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="65695b90-2b8f-4cf4-be3d-b4aa8da85f89" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="9eca10f3-e760-4a46-95dd-c6c90e5c6553" LastKnownName="PnmlDocument" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="8e5bda8e-291a-44f3-b9e9-937ad1508388" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="661d4f23-0f65-4278-9245-120ed25a7840" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="8eaeca3e-1d51-4baa-bf69-6c4e9f1bed12" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="9acc53f3-6f00-43e4-972a-292aa1016a1c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="5c32369f-937f-41a4-8ad6-7d85a896d059" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9eca10f3-e760-4a46-95dd-c6c90e5c6553" name="PnmlDocument" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="c5ef6a77-615a-47c1-a6c5-a7df1d84915c" />
+              <generalsInternal>
+                <generalization Id="0b78a7e9-cfc5-4faf-9515-cbf7eab5d07f" isSubstitutable="false">
+                  <classMoniker Id="f73ba85c-b9a5-4b56-b0a3-55eb51634a53" LastKnownName="PersistentDocument" />
+                  <elementDefinition Id="436e7812-8a39-40ce-af87-d124b99b35fb" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f73ba85c-b9a5-4b56-b0a3-55eb51634a53" name="PersistentDocument" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e71369e1-4b8e-4684-bfec-4052c9b2b3c7" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="9eeb311f-b82d-4710-94b6-8f463114d684" name="YuriyGuts.Petrifier.Runtime.Hosting">
+        <elementDefinition Id="fd904f9c-c95e-4e82-aa0f-a70eb314bf99" />
+        <importedPackagesInternal>
+          <packageImport Id="f3a0e453-dc67-40f2-a0c9-344453168f64" visibility="Public">
+            <packageMoniker Id="b832a514-a657-40f2-ade3-9a2d27cfa30f" LastKnownName="YuriyGuts.Petrifier.Runtime" />
+            <elementDefinition Id="1c8db737-de5e-416d-94cd-605ae71ac091" />
+          </packageImport>
+          <packageImport Id="7757fe30-b1a6-44f9-95c3-2342175eaca2" visibility="Public">
+            <packageMoniker Id="493e3633-0103-4d17-9e7b-9a73aeb1c3f9" LastKnownName="YuriyGuts.Petrifier.Persistence" />
+            <elementDefinition Id="cb008e7d-f1b9-47d0-9162-24805ad63aeb" />
+          </packageImport>
+        </importedPackagesInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="4bbd9e73-867e-4ec7-8a7f-aeb4a5896d28" name="RuntimeHostBase" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8570c9bd-b2ab-43d5-a664-a32dfbb2b6ea" />
+              <suppliersInternal>
+                <interfaceRealization Id="9db3e295-4efc-4d72-bba5-bd31fb777dc1">
+                  <interfaceMoniker Id="42ccb4eb-555f-429a-ada0-3ebc183e660f" LastKnownName="IRuntimeHost" />
+                  <elementDefinition Id="ba431003-3922-4678-a3d7-a1a1845c189b" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="56a616da-1408-41fd-a3aa-a7edc971e186" name="ExecuteModule" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d487f580-623e-45e7-9d4d-f06a6a45567d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="64ffe7d2-a980-4c46-8fa7-b810d6c9a848" name="PetriNetModule" direction="In" isUnique="false">
+                        <elementDefinition Id="b7a7d84f-e184-4923-b726-6df4c19a0634" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0f494096-9c92-47b3-9465-5c21d1f27b3a" direction="Return" isUnique="false">
+                        <elementDefinition Id="2d652fda-8adf-4f07-942c-1844893e548a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="afd99fa7-1975-42c8-912e-97aaffe4860f" LastKnownName="RuntimeModuleHandle" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="4a4f10cc-fdf9-4049-a1a3-5698ef30170d" name="SuspendExecution" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="83e30bf2-0ad4-4681-b570-0cad3819efd1" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6691e02e-2737-4259-84ac-9d7ec1a45a1e" name="RuntimeModuleHandle" direction="In" isUnique="false">
+                        <elementDefinition Id="7fd1022b-eea0-4fcf-8b94-06c58bcace91" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ad6d8ca6-a2d0-47a6-a966-bcab88e51278" direction="Return" isUnique="false">
+                        <elementDefinition Id="cf5bdefa-f29f-4732-a557-e67850b08ad5" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7153021b-7215-4601-bdff-fce25c4e2f67" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="348d8f51-f18e-4d6e-9e73-feb922e00b61" name="TakeSnapshot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c2830a92-ffe1-48bc-8b65-4260af070c3b" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b4ae1ff0-edfa-4c07-aa44-26949607e072" name="RuntimeModuleHandle" direction="In" isUnique="false">
+                        <elementDefinition Id="207027e7-2dad-4ecc-b0dc-24f190d86d07" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f4f46466-f9a0-4dd0-8481-8b1bea998e6c" direction="Return" isUnique="false">
+                        <elementDefinition Id="5410689d-89cf-48ec-bd85-cd09a7bc8b48" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="8b3c075c-3016-4026-b944-dbcd8a86bc9c" LastKnownName="RuntimeModuleSnapshot" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="f4382f49-dee4-4b6c-ae7c-c10ed2f84939" name="ResumeExecution" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f600346b-1649-4daa-b0e0-6f011fa3f842" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="40eb54cf-d692-4d4b-8933-c1f7faf4862d" name="RuntimeModuleHandle" direction="In" isUnique="false">
+                        <elementDefinition Id="d469a805-09ac-4c68-ac69-f6c2dd496cd0" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="71ddd97e-b4df-4b76-8b95-d725ebe2a3b3" direction="Return" isUnique="false">
+                        <elementDefinition Id="6d742c3c-7161-4ef5-bea0-5fd74b9abd81" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7153021b-7215-4601-bdff-fce25c4e2f67" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d89f5440-a838-4801-9c28-a54eeb56ccff" name="EmbeddedRuntimeHost" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b6bff8fd-d9ec-4904-9e79-a9c64fb08cf9" />
+              <generalsInternal>
+                <generalization Id="ff6c1d92-f74a-45b4-922a-459977ebc0e7" isSubstitutable="false">
+                  <classMoniker Id="4bbd9e73-867e-4ec7-8a7f-aeb4a5896d28" LastKnownName="RuntimeHostBase" />
+                  <elementDefinition Id="cdfa6382-9847-4813-8deb-085d1835dad9" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="63018fcf-03ad-4718-ae73-39fa5d6b7aed" name="RemoteRuntimeHost" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="47413e18-d695-46ed-b68e-324d6798c327" />
+              <generalsInternal>
+                <generalization Id="b00ebba8-1830-434f-91e5-4ddb429ad45b" isSubstitutable="false">
+                  <classMoniker Id="4bbd9e73-867e-4ec7-8a7f-aeb4a5896d28" LastKnownName="RuntimeHostBase" />
+                  <elementDefinition Id="0fbbe7c4-9814-4166-96e4-3d959a7cb152" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="42ccb4eb-555f-429a-ada0-3ebc183e660f" name="IRuntimeHost" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="2aefb054-3434-41a3-aae1-1b6a6730dadc" />
+              <suppliersInternal>
+                <dependency Id="c59c3358-dd89-448e-a775-b3ae7c169730">
+                  <classMoniker Id="b6b0ae01-e3a1-4cb6-b9aa-8d09208b44f1" LastKnownName="RuntimeModuleHandle" />
+                  <elementDefinition Id="a8cc1be3-41e5-4f5f-bc85-25783ba6f97f" />
+                </dependency>
+                <dependency Id="1d9dee00-8e1c-4cd4-a081-d9d1f3f0fbef">
+                  <classMoniker Id="d3506812-7970-41e0-b808-70e3f6079e14" LastKnownName="RuntimeModuleSnapshot" />
+                  <elementDefinition Id="3ca9cddf-f44d-4171-901c-caaa2302c64d" />
+                </dependency>
+              </suppliersInternal>
+              <ownedOperations>
+                <operation Id="8554f45b-bd06-485f-8de9-84397c8ff888" name="ExecuteModule" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="61da5ce9-8333-489b-910a-944791db2e7f" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7922a438-42f8-4c25-a055-da524dce60f7" name="PetriNetModule" direction="In" isUnique="false">
+                        <elementDefinition Id="4313bf52-f0d7-46f4-919d-77835975c020" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a11f5deb-577e-4198-9e16-0ea98bdd6c56" direction="Return" isUnique="false">
+                        <elementDefinition Id="dd542625-eb57-4eed-8eac-8f2c50370ecf" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="afd99fa7-1975-42c8-912e-97aaffe4860f" LastKnownName="RuntimeModuleHandle" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="9440d573-ca33-4b0d-ae93-0fde46487347" name="SuspendExecution" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e76a08ce-b19f-4716-8043-c8b72d927d11" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5ec93925-24bc-44fd-8d82-4435a41a3b40" name="RuntimeModuleHandle" direction="In" isUnique="false">
+                        <elementDefinition Id="bbb8a745-2dd4-4418-a2d7-ae08f1cda251" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="59fc8139-1a67-473d-b3a9-d445fce34f2c" direction="Return" isUnique="false">
+                        <elementDefinition Id="b1b437a5-97eb-437e-a4d8-4ba00412af58" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7153021b-7215-4601-bdff-fce25c4e2f67" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="a751dbeb-f6b7-43fd-8db3-a1d8668359dd" name="TakeSnapshot" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c2b84cae-5593-4680-a19e-cd27b64296db" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="61bceaf9-4ad0-47ce-b9fb-dec2f2b02d31" name="RuntimeModuleHandle" direction="In" isUnique="false">
+                        <elementDefinition Id="b7c7560f-4ee5-452e-904e-dc0a53ce364a" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="79f3c457-b6a6-4510-9bd7-271bc60d03a8" direction="Return" isUnique="false">
+                        <elementDefinition Id="11a84c43-1473-4f0a-bbf2-901bc35811a5" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="8b3c075c-3016-4026-b944-dbcd8a86bc9c" LastKnownName="RuntimeModuleSnapshot" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="44408e52-bf43-4a00-8436-c556f355f420" name="ResumeExecution" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="37a3d24d-97f1-45e4-950e-5e3185111631" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a0483b7a-172b-4188-b243-a359e86c7d99" name="RuntimeModuleHandle" direction="In" isUnique="false">
+                        <elementDefinition Id="50d2ba39-edff-412e-b1c5-b5a922d99cda" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="dd89b6ec-1ced-4eee-8b7c-d94aadb04536" direction="Return" isUnique="false">
+                        <elementDefinition Id="2062133c-7ec8-4f31-a91b-b6d152a38613" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="7153021b-7215-4601-bdff-fce25c4e2f67" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="afd99fa7-1975-42c8-912e-97aaffe4860f" name="RuntimeModuleHandle" isAbstract="false" isLeaf="false" cachedFullName="RuntimeModuleHandle">
+        <elementDefinition Id="5fe48938-e139-4a71-b109-e78456a0e12f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7153021b-7215-4601-bdff-fce25c4e2f67" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="73ad9ad9-d5d8-4342-ba4e-95e5607a629c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8b3c075c-3016-4026-b944-dbcd8a86bc9c" name="RuntimeModuleSnapshot" isAbstract="false" isLeaf="false" cachedFullName="RuntimeModuleSnapshot">
+        <elementDefinition Id="45703d14-b1ce-4430-941a-7b6fa799b59c" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="5453b109-720b-4acd-b73d-ed720b300a70" name="YuriyGuts.Petrifier.Model">
+    <elementDefinition Id="7055eec4-19ac-40fc-bf0c-ac761cc3d4dc" />
+    <profileInstances>
+      <packageHasProfileInstances Id="050c2ef1-a807-4f7e-84e1-537a77ba9923">
+        <profileInstance Id="c87597ec-aae8-4df9-a672-f75c03c50b87" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ea24a999-c029-4068-8298-f751cf8d829b">
+        <profileInstance Id="b5b95e32-9e67-40f8-a1e0-d94c41db040d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

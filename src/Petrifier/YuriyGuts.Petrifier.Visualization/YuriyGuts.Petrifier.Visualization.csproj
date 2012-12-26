@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F16D23C-EFF7-4024-8B9E-CC58045E9A51}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YuriyGuts.Petrifier.Visualization</RootNamespace>
+    <AssemblyName>YuriyGuts.Petrifier.Visualization</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\~BuildOutput\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\YuriyGuts.Petrifier.Signature\YuriyGuts.Petrifier.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PetriNets\ElementWidgets\AndJoinWidget.cs" />
+    <Compile Include="PetriNets\ElementWidgets\AndSplitWidget.cs" />
+    <Compile Include="PetriNets\ElementWidgets\ArcWidget.cs" />
+    <Compile Include="PetriNets\ElementWidgets\OrJoinWidget.cs" />
+    <Compile Include="PetriNets\ElementWidgets\OrSplitWidget.cs" />
+    <Compile Include="PetriNets\ElementWidgets\PlaceWidget.cs" />
+    <Compile Include="PetriNets\ElementWidgets\SubprocessWidget.cs" />
+    <Compile Include="PetriNets\ElementWidgets\TransitionWidget.cs" />
+    <Compile Include="IWidgetLocator.cs" />
+    <Compile Include="PetriNets\PetriNetEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PetriNets\PetriNetEditor.Designer.cs">
+      <DependentUpon>PetriNetEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PetriNets\GeometryHelper.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetBase.cs" />
+    <Compile Include="WidgetRenderingContext.cs" />
+    <Compile Include="PetriNets\PetriNetElementWidget.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YuriyGuts.Petrifier.Core\YuriyGuts.Petrifier.Core.csproj">
+      <Project>{E8CF71FF-095E-44D8-AF26-AA0B088733F6}</Project>
+      <Name>YuriyGuts.Petrifier.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PetriNets\PetriNetEditor.resx">
+      <DependentUpon>PetriNetEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="..\YuriyGuts.Petrifier.Signature\YuriyGuts.Petrifier.snk">
+      <Link>YuriyGuts.Petrifier.snk</Link>
+    </None>
+    <None Include="Resources\ConnectInverse.png" />
+    <None Include="Resources\Eraser.png" />
+    <None Include="Resources\Disconnect.png" />
+    <None Include="Resources\Connect.png" />
+    <None Include="Resources\Arrow.png" />
+    <Content Include="Resources\PetriNets\AndJoin.png" />
+    <Content Include="Resources\PetriNets\AndSplit.png" />
+    <Content Include="Resources\PetriNets\OrJoin.png" />
+    <Content Include="Resources\PetriNets\OrSplit.png" />
+    <Content Include="Resources\PetriNets\Place.png" />
+    <Content Include="Resources\PetriNets\Subprocess.png" />
+    <Content Include="Resources\PetriNets\Transition.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

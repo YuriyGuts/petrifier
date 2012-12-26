@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<pnml>
+  <net>
+    <place id="Place1">
+      <name>
+        <text>Place1</text>
+      </name>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+      <graphics>
+        <position x="76" y="155" />
+        <dimension x="40" y="40" />
+      </graphics>
+    </place>
+    <place id="Place2">
+      <name>
+        <text>Place2</text>
+      </name>
+      <graphics>
+        <position x="306" y="154" />
+        <dimension x="40" y="40" />
+      </graphics>
+    </place>
+    <transition id="Transition1">
+      <name>
+        <text>Transition1</text>
+      </name>
+      <graphics>
+        <position x="192" y="154" />
+        <dimension x="40" y="40" />
+      </graphics>
+      <toolspecific tool="Petrifier" version="0.1">
+        <transitiontype>Transition</transitiontype>
+        <methodReference>
+          <assembly>PetriNetRunner.exe</assembly>
+          <type>PetriNetRunner.TestClass</type>
+          <method>A</method>
+        </methodReference>
+      </toolspecific>
+    </transition>
+    <arc id="arc1" source="Place1" target="Transition1">
+      <inscription>
+        <text></text>
+      </inscription>
+    </arc>
+    <arc id="arc2" source="Transition1" target="Place2">
+      <inscription>
+        <text></text>
+      </inscription>
+    </arc>
+  </net>
+</pnml>

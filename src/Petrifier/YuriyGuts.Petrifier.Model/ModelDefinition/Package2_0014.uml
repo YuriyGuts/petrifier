@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="f1d86335-5949-4d1d-a02f-bd5e563c453a"
+  name="YuriyGuts.Petrifier.Visualization" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <importedPackagesInternal>
+    <packageImport
+      Id="d4b317ed-792d-486a-9f4d-ef2758298cea"
+      visibility="Public">
+      <packageMoniker
+        Id="17983339-6321-4869-ab44-4812dfc05b5d"
+        LastKnownName="YuriyGuts.Petrifier.Core"
+        LastKnownLocation="Package_0014.uml" />
+    </packageImport>
+  </importedPackagesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="dd33aa14-3ca5-4016-b0d9-3af633566a41"
+        name="GeometryHelper"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4d3a8bb7-fe0a-4418-a130-8441d57e5850"
+        name="PetriNetEditor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="178108fa-16f5-40f7-a67f-dc945f80795c">
+            <interfaceMoniker
+              Id="b8f1b564-6e9a-458f-a6cc-00c1ee3fcac8"
+              LastKnownName="IWidgetLocator"
+              LastKnownLocation="Package2_0014.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="627b28f6-3ad6-47cf-a79f-2ac9e67edc88"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Widgets"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c33baf0a-bd6b-4d18-ba32-416cc1a7907d"
+              LastKnownName="PetriNetElementWidget"
+              LastKnownLocation="Package2_0014.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8751e87f-7b04-4c28-9872-223dddea747e"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7cc4b914-dbdf-4077-a620-293fbf8986d0"
+                  name="Widgets"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3022df95-1b6d-454d-8fd1-c450ac6953b4"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9149fddc-5a5a-4197-abc8-e04e1c84cd60"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="640f4f27-e1e4-41e2-9a65-d6b3f723d219"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dd33aa14-3ca5-4016-b0d9-3af633566a41"
+              LastKnownName="GeometryHelper"
+              LastKnownLocation="Package2_0014.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="613f7af7-2808-4a76-81b0-1cf8a4b18a45"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="193c1279-8878-4452-9477-0361623dafd6"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c33baf0a-bd6b-4d18-ba32-416cc1a7907d"
+        name="PetriNetElementWidget"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b8f1b564-6e9a-458f-a6cc-00c1ee3fcac8"
+        name="IWidgetLocator"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

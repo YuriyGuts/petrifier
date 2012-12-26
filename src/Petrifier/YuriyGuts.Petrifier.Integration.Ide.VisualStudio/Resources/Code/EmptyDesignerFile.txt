@@ -1,0 +1,7 @@
+﻿using System;
+using YuriyGuts.Petrifier.Runtime;
+
+public partial class PetriNetModule1 : PetriNetModule
+{
+    
+}

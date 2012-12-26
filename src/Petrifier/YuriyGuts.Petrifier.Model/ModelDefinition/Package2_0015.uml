@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7dc3a1ac-a9c4-4449-a4cc-0d2d90236b8d"
+  name="YuriyGuts.Petrifier.Persistence" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <importedPackagesInternal>
+    <packageImport
+      Id="ec1f3690-5862-406c-b81f-460cdfd6f8fb"
+      visibility="Public">
+      <packageMoniker
+        Id="17983339-6321-4869-ab44-4812dfc05b5d"
+        LastKnownName="YuriyGuts.Petrifier.Core"
+        LastKnownLocation="Package_0014.uml" />
+    </packageImport>
+  </importedPackagesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="63ef7b85-c57b-4b7c-8bfc-4efd156a0a36"
+        name="PetriNetPersister"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="313f8a48-16b5-4dd9-afd6-e246f1fcf509"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Document"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e71369e1-4b8e-4684-bfec-4052c9b2b3c7"
+              LastKnownName="PersistentDocument"
+              LastKnownLocation="Package2_0015.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0a081eb5-ed44-44ae-a24a-9ad75e846be6"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1e37b7d-4a6b-4347-8b5f-864edcb7b7df"
+                  name="Document"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8d142a02-255e-4aa1-aba0-f3cf9832f9ff"
+        name="PnmlPersister"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="eb1966cd-bb24-4b42-b8ac-386af41f17f6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="63ef7b85-c57b-4b7c-8bfc-4efd156a0a36"
+              LastKnownName="PetriNetPersister"
+              LastKnownLocation="Package2_0015.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="5c32369f-937f-41a4-8ad6-7d85a896d059"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c5ef6a77-615a-47c1-a6c5-a7df1d84915c"
+              LastKnownName="PnmlDocument"
+              LastKnownLocation="Package2_0015.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="661d4f23-0f65-4278-9245-120ed25a7840"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9acc53f3-6f00-43e4-972a-292aa1016a1c"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="16c631c2-3500-48f5-a0c6-7f790d5ef63a"
+        name="EmbeddedRuntimeHost"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c5ef6a77-615a-47c1-a6c5-a7df1d84915c"
+        name="PnmlDocument"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="436e7812-8a39-40ce-af87-d124b99b35fb"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e71369e1-4b8e-4684-bfec-4052c9b2b3c7"
+              LastKnownName="PersistentDocument"
+              LastKnownLocation="Package2_0015.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e71369e1-4b8e-4684-bfec-4052c9b2b3c7"
+        name="PersistentDocument"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

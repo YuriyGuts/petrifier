@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="f45f04bb-3578-4886-a044-b3f8ae03bf40" name="Petrifier.Core" linkedPackageId="6290c0ff-f704-42d1-b774-487ae9270c22" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="1c2373b4-309c-443e-8426-d50ed7049717">
+      <profileInstance Id="9b556587-214d-4d48-8f98-7d5c880eb830" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="30ea8eee-c985-4a18-8a7f-152410793800">
+      <profileInstance Id="fbce3cb8-302c-40eb-a8dd-63f65642c42f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <package Id="6290c0ff-f704-42d1-b774-487ae9270c22" name="YuriyGuts.Petrifier.Model">
+    <elementDefinition Id="7055eec4-19ac-40fc-bf0c-ac761cc3d4dc" />
+  </package>
+  <package Id="12b01904-e87e-4b0b-aa22-91a508b015a4" name="YuriyGuts.Petrifier.Core">
+    <elementDefinition Id="17983339-6321-4869-ab44-4812dfc05b5d" />
+  </package>
+</logicalClassDesignerModel>

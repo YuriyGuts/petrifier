@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<pnml>
+  <net>
+    <place id="Place1">
+      <name>
+        <text>Place1</text>
+      </name>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+      <graphics>
+        <position x="53" y="145" />
+        <dimension x="40" y="40" />
+      </graphics>
+    </place>
+    <place id="Place2">
+      <name>
+        <text>Place2</text>
+      </name>
+      <graphics>
+        <position x="254" y="146" />
+        <dimension x="40" y="40" />
+      </graphics>
+    </place>
+    <place id="Place3">
+      <name>
+        <text>Place3</text>
+      </name>
+      <graphics>
+        <position x="450" y="143" />
+        <dimension x="40" y="40" />
+      </graphics>
+    </place>
+    <transition id="Transition1">
+      <name>
+        <text>Transition1</text>
+      </name>
+      <graphics>
+        <position x="157" y="146" />
+        <dimension x="40" y="40" />
+      </graphics>
+      <toolspecific tool="Petrifier" version="0.1">
+        <transitiontype>Transition</transitiontype>
+        <methodReference>
+          <assembly>PetriNetRunner.exe</assembly>
+          <type>PetriNetRunner.TestClass</type>
+          <method>C</method>
+        </methodReference>
+      </toolspecific>
+    </transition>
+    <transition id="Transition2">
+      <name>
+        <text>Transition2</text>
+      </name>
+      <graphics>
+        <position x="354" y="145" />
+        <dimension x="40" y="40" />
+      </graphics>
+      <toolspecific tool="Petrifier" version="0.1">
+        <transitiontype>Transition</transitiontype>
+        <methodReference>
+          <assembly>PetriNetRunner.exe</assembly>
+          <type>PetriNetRunner.TestClass</type>
+          <method>A</method>
+        </methodReference>
+      </toolspecific>
+    </transition>
+    <arc id="arc1" source="Place1" target="Transition1">
+      <inscription>
+        <text></text>
+      </inscription>
+    </arc>
+    <arc id="arc2" source="Transition1" target="Place2">
+      <inscription>
+        <text></text>
+      </inscription>
+    </arc>
+    <arc id="arc3" source="Place2" target="Transition2">
+      <inscription>
+        <text></text>
+      </inscription>
+    </arc>
+    <arc id="arc4" source="Transition2" target="Place3">
+      <inscription>
+        <text></text>
+      </inscription>
+    </arc>
+  </net>
+</pnml>
